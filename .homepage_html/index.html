@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👾👾👾👾👾👾👾👾👾</title>
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <body onload="startTime()">
+        <div class="box">
+            <div class="box-image">
+                <img src="images/image.gif">
+            </div>
+            <div class="box-content">
+                <div id="current-time" class="current-time">
+                </div>
+
+                <div class="header-txt">
+                    <strike>socials</strike>
+                </div>
+                <div class="content-list">
+                    <a class="link" href="https://reddit.com" target="_blank">reddit</a>
+                    <span>/</span>
+                    <a class="link" href="https://vk.com" target="_blank">vk</a>
+                    <span>/</span>
+                    <a class="link" href="https://twitter.com" target="_blank">twitter</a>
+                    <span>/</span>
+                    <a class="link" href="https://instagram.com" target="_blank">instagram</a>
+                </div>
+                <div class="header-txt">
+                    <strike>entertainment</strike>
+                </div>
+                <div class="content-list">
+                    <a class="link" href="https://youtube.com" target="_blank">youtube</a>
+                    <span>/</span>
+                    <a class="link" href="https://monkeytype.com" target="_blank">monkeytype</a>
+                </div>
+                <div class="header-txt">
+                    <strike>code</strike>
+                </div>
+                <div class="content-list">
+                    <a class="link" href="https://github.com" target="_blank">github</a>
+                    <span>/</span>
+                    <a class="link" href="https://habr.com/ru" target="_blank">habr</a>
+                </div>
+                <form id="search-box" class="search-box">
+                    <input placeholder="Type to search" tabindex="1" type="text" value="" name="query">
+                </form>
+            </div>
+        </div>
+        <script>
+            let searchBox = document.querySelector('.search-box')
+            searchBox?.addEventListener('submit', e => {
+                e.preventDefault();
+                search(e.currentTarget.query.value);
+            });
+            searchBox.elements["query"].focus();
+        </script>
+    </body>
+</html>
