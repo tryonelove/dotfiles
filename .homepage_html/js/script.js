@@ -5,7 +5,10 @@ function startTime() { // days
     let s = today.getSeconds();
     let t = setTimeout(startTime, 500);
 
-    document.getElementById('current-time').innerHTML = `<h1>${h}:${checkTime(m)}:${s}<h1>`;
+    m = checkTime(m);
+    s = checkTime(s);
+
+    document.getElementById('current-time').innerHTML = `<h1>${h}:${m}:${s}<h1>`;
 }
 
 function checkTime(i) {
@@ -14,6 +17,6 @@ function checkTime(i) {
 }
 
 function search(query) {
-    let qquery = escape(query);
+    let qquery = decodeURIComponent(query);
     window.location.href = "https://duckduckgo.com/?q=" + qquery;
 }

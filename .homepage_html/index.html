@@ -24,38 +24,42 @@
                     <strike>socials</strike>
                 </div>
                 <div class="content-list">
-                    <a class="link" href="https://reddit.com" target="_blank">reddit</a>
+                   <a class="link" href="https://vk.com">vk</a>
                     <span>/</span>
-                    <a class="link" href="https://vk.com" target="_blank">vk</a>
+                    <a class="link" href="https://twitter.com" >twitter</a>
                     <span>/</span>
-                    <a class="link" href="https://twitter.com" target="_blank">twitter</a>
-                    <span>/</span>
-                    <a class="link" href="https://instagram.com" target="_blank">instagram</a>
-                </div>
-                <div class="header-txt">
-                    <strike>entertainment</strike>
-                </div>
-                <div class="content-list">
-                    <a class="link" href="https://youtube.com" target="_blank">youtube</a>
-                    <span>/</span>
-                    <a class="link" href="https://monkeytype.com" target="_blank">monkeytype</a>
-                </div>
-                <div class="header-txt">
-                    <strike>code</strike>
-                </div>
-                <div class="content-list">
-                    <a class="link" href="https://github.com" target="_blank">github</a>
-                    <span>/</span>
-                    <a class="link" href="https://habr.com/ru" target="_blank">habr</a>
-                </div>
-                <form id="search-box" class="search-box">
-                    <input placeholder="Type to search" tabindex="1" type="text" value="" name="query">
-                </form>
-            </div>
-        </div>
-        <script>
-            let searchBox = document.querySelector('.search-box')
-            searchBox?.addEventListener('submit', e => {
+		    <a class="link" href="https://instagram.com">instagram</a>
+		    <span>/</span>      
+		    <a class="link" href="https://protonmail.com">protonmail</a>
+		</div>
+				<div class="header-txt">
+				    <strike>entertainment</strike>
+				</div>
+				<div class="content-list">
+				     <a class="link" href="https://reddit.com">reddit</a>
+				    <span>/</span>
+				    <a class="link" href="https://youtube.com">youtube</a>
+				    <span>/</span>
+				    <a class="link" href="https://twitch.com">twitch</a>
+				    <span>/</span> 
+				    <a class="link" href="https://monkeytype.com">monkeytype</a>
+				</div>
+				<div class="header-txt">
+				    <strike>code</strike>
+				</div>
+				<div class="content-list">
+				    <a class="link" href="https://github.com">github</a>
+				    <span>/</span>
+				    <a class="link" href="https://habr.com/ru">habr</a>
+				</div>
+				<form id="search-box" class="search-box">
+				    <input placeholder="Type to search" tabindex="1" type="text" value="" name="query">
+				</form>
+			    </div>
+			</div>
+			<script>
+			    let searchBox = document.querySelector('.search-box')
+			    searchBox?.addEventListener('submit', e => {
                 e.preventDefault();
                 search(e.currentTarget.query.value);
             });
